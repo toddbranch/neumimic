@@ -1,6 +1,6 @@
 body { min-height: 100%; font-family: Verdana, "Trebuchet MS", Helvicita, Arial, sans-serif; font-size: 95%;
  background-color: #ffffff; color: #000000; padding: 0px; margin: 0px; margin-bottom: 10px;
-  background-image: url(images/back.png); }
+   } /*background-image: url(images/back.png);*/
 hr { border: none; height: 1px; background-color: #808080; }
 form { padding: 0px; margin: 0px; }
 
