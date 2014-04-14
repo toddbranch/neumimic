@@ -146,7 +146,7 @@ function parse(str)
    {
       if(e instanceof SyntaxError)
       {
-         alert("There was a syntax error in your JSON string.\n" + e.message + "\nPlease check your syntax and try again.");
+         alert("There was a syntax error in your JSON string.\n" + e.message + str + "\nPlease check your syntax and try again.");
          $("text").focus();
          return;
       }
