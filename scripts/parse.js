@@ -137,7 +137,7 @@ function parse(str)
    objectCount = 0;
 
    var obj = null;
-   obj = str.parseJSON();
+   //obj = str.parseJSON();
    try
    {
       obj = str.parseJSON();
