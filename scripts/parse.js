@@ -156,7 +156,7 @@ function parse(str)
    try
    {
       obj = str.parseJSON();
-	  transformed = json.parse(str);
+	  
 	  alert(obj);
    }
    catch(e)
@@ -172,7 +172,7 @@ function parse(str)
       $("text").focus();
       return
    }
-   
+   transformed = json.parse(str);
    //return parseValue(obj, null, null);
    return ConvertJsonToTable(transformed, 'jsonTable', null, 'Download');
 }
