@@ -155,7 +155,7 @@ function parse(str)
    try
    {
       obj = str.parseJSON();
-	  alert(obj);
+      alert("Valid JSON!");
    }
    catch(e)
    {
@@ -172,7 +172,7 @@ function parse(str)
    }
 
    //return parseValue(obj, null, null);
-   return ConvertJsonToTable(obj, 'jsonTable', null, 'Download');
+   return ConvertJsonToTable(str, 'jsonTable', null, 'Download');
 }
 
 function doParse()
