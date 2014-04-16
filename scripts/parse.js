@@ -477,17 +477,8 @@ function ConvertJsonToTable(parsedJson, tableId, tableClassName, linkText)
                             	if(typeof(value) == 'object'){
 									if(value instanceof Array)
 									{
-										alert("Found Array!");
-										
-										tbCon += "<table class='arraytable'>\n<tr><th>Index</th><th>Value</th></tr>\n";
-            
-										for(prop in value)
-										{
-										   if(typeof(value[prop]) == "function") continue;
-										   tbCon += "<tr><td>" + prop + "</td><td>" + parseValue(value[prop], parent, level + 1) + "</td></tr>\n";
-										}
-										
-										tbCon += "</table>\n";
+										alert("Found Array!");	
+										tbCon += tdRow.format(value.toString());
 									}
                             		//for supporting nested tables
                             		//tbCon += tdRow.format(ConvertJsonToTable(eval(value.data), value.tableId, value.tableClassName, value.linkText));
