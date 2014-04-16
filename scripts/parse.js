@@ -141,6 +141,7 @@ function parse(str)
    try
    {
       obj = str.parseJSON();
+      alert(obj);
    }
    catch(e)
    {
