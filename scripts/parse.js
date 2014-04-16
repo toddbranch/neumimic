@@ -155,9 +155,8 @@ function parse(str)
    var transformed = null;
    try
    {
-      obj = str.parseJSON();
-	  
-	  alert(obj);
+      obj = str.parseJSON();	  
+	  alert("Valid JSON!");
    }
    catch(e)
    {
@@ -172,9 +171,9 @@ function parse(str)
       $("text").focus();
       return
    }
-   transformed = json.parse(str);
+   //transformed = json.parse(str);
    //return parseValue(obj, null, null);
-   return ConvertJsonToTable(transformed, 'jsonTable', null, 'Download');
+   return ConvertJsonToTable(obj, 'jsonTable', null, 'Download');
 }
 
 function doParse()
