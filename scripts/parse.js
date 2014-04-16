@@ -477,7 +477,6 @@ function ConvertJsonToTable(parsedJson, tableId, tableClassName, linkText)
                             	if(typeof(value) == 'object'){
 									if(value instanceof Array)
 									{
-										alert("Found Array!");	
 										tbCon += tdRow.format(value.toString());
 									}
                             		//for supporting nested tables
