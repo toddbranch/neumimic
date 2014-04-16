@@ -152,10 +152,12 @@ function parse(str)
    objectCount = 0;
 
    var obj = null;
+   var transformed = null;
    try
    {
       obj = str.parseJSON();
-      alert("Valid JSON!");
+	  transformed = json.parse(str);
+	  alert(obj);
    }
    catch(e)
    {
@@ -170,9 +172,9 @@ function parse(str)
       $("text").focus();
       return
    }
-
+   
    //return parseValue(obj, null, null);
-   return ConvertJsonToTable(str, 'jsonTable', null, 'Download');
+   return ConvertJsonToTable(transformed, 'jsonTable', null, 'Download');
 }
 
 function doParse()
