@@ -145,19 +145,22 @@ function parseValue(val, parent, level)
    }
 }
 
+$.getJSON("http://api.neumimic.com/sessions", parse);
+
 function parse(str)
 {
    elementCount = 0;
    arrayCount = 0;
    objectCount = 0;
-   
-   var test = "http://api.neumimic.com/sessions";
+
    var obj = null;
    var transformed = null;
-   alert(str);
+   
+   alert(obj);
    try
    {
-      obj = obj.parseJSON();	  
+      //obj = str.parseJSON();	 
+	  obj = $.getJSON("http://api.neumimic.com/sessions")
 	  alert("Valid JSON!");
    }
    catch(e)
@@ -180,10 +183,10 @@ function parse(str)
 
 function doParse()
 {
-   $("submit").value = "processing...";
-   $("submit").disabled = "disabled";
+   //$("submit").value = "processing...";
+   //$("submit").disabled = "disabled";
 
-   setTimeout(doParse2, 50);
+   //setTimeout(doParse2, 50);
 }
 
 function doParse2()
