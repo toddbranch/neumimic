@@ -150,12 +150,13 @@ function parse(str)
    elementCount = 0;
    arrayCount = 0;
    objectCount = 0;
-
+   
+   var test = "http://api.neumimic.com/sessions";;
    var obj = null;
    var transformed = null;
    try
    {
-      obj = str.parseJSON();	  
+      obj = test.parseJSON();	  
 	  alert("Valid JSON!");
    }
    catch(e)
