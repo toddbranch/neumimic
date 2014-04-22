@@ -156,12 +156,12 @@ function parse(str)
    var obj = null;
    var transformed = null;
    
-   alert(obj);
+   alert(str);
    try
    {
-      //obj = str.parseJSON();	 
-	  obj = $.getJSON("http://api.neumimic.com/sessions")
-	  alert("Valid JSON!");
+      obj = str.parseJSON();	 '
+	  //obj = $.getJSON("http://api.neumimic.com/sessions")
+	alert("Valid JSON!");
    }
    catch(e)
    {
