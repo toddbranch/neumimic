@@ -159,8 +159,8 @@ $.getJSON("http://api.neumimic.com/sessions", function parse(str)
    alert(str);
    try
    {
-      //obj = str.parseJSON();	 
-	  obj = $.getJSON("http://api.neumimic.com/sessions")
+      obj = str.parseJSON();	 
+	  //obj = str.getJSON("http://api.neumimic.com/sessions")
 	  alert("Valid JSON!");
    }
    catch(e)
@@ -183,8 +183,8 @@ $.getJSON("http://api.neumimic.com/sessions", function parse(str)
 
 function doParse()
 {
-   //$("submit").value = "processing...";
-   //$("submit").disabled = "disabled";
+   $("submit").value = "processing...";
+   $("submit").disabled = "disabled";
    alert("button pressed");
    //setTimeout(doParse2, 50);
 }
