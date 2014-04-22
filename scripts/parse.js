@@ -147,7 +147,7 @@ function parseValue(val, parent, level)
 
 //$.getJSON("http://api.neumimic.com/sessions", parse);
 
-$.getJSON("http://api.neumimic.com/sessions", function parse(str)
+function parse(str)
 {
    elementCount = 0;
    arrayCount = 0;
@@ -179,14 +179,14 @@ $.getJSON("http://api.neumimic.com/sessions", function parse(str)
    //transformed = json.parse(str);
    //return parseValue(obj, null, null);
    return ConvertJsonToTable(obj, 'jsonTable', null, 'Download');
-});
+}
 
 function doParse()
 {
    $("submit").value = "processing...";
    $("submit").disabled = "disabled";
-   alert("button pressed");
-   //setTimeout(doParse2, 50);
+   alert("button pressed2");
+   setTimeout(doParse2, 50);
 }
 
 function doParse2()
